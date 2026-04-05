@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simulação de Urna Eletrônica</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="urna-container">
+        <h1>💻Regian Leopoldo</h1>
+        <div class="tela">
+            <div class="display">
+                <p>PREFEITO</p>
+                <input type="text" id="numero1" placeholder="" readonly>
+                <input type="text" id="numero2" placeholder="" readonly>
+                <div id="informacoesCandidato"></div>
+            </div>
+            <div class="foto-candidato">
+                <img id="imagemCandidato" src="" alt="">
+            </div>
+        </div>
+
+        <div class="teclado">
+            <div class="linha">
+                <button onclick="digitar('1')">1</button>
+                <button onclick="digitar('2')">2</button>
+                <button onclick="digitar('3')">3</button>
+            </div>
+            <div class="linha">
+                <button onclick="digitar('4')">4</button>
+                <button onclick="digitar('5')">5</button>
+                <button onclick="digitar('6')">6</button>
+            </div>
+            <div class="linha">
+                <button onclick="digitar('7')">7</button>
+                <button onclick="digitar('8')">8</button>
+                <button onclick="digitar('9')">9</button>
+            </div>
+            <div class="linha">
+                <button onclick="digitar('0')">0</button>
+            </div>
+            <div class="linha-acoes">
+                <button class="corrigir" onclick="corrigir()">CORRIGE</button>
+                <button class="branco" onclick="votarBranco()">BRANCO</button>
+                <button class="confirma" onclick="confirmar()">CONFIRMA</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
